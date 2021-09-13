@@ -15,4 +15,3 @@ const closeNav = () => {
 
 //window.addEventListener('click', closeNav);
 button.addEventListener('click', toggleNav);
-button.addEventListener('touchstart', toggleNav);
