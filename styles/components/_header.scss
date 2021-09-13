@@ -3,11 +3,12 @@
 header {
     position: sticky;
     display: grid;
-    grid-template-columns: 1fr auto;
+    width: 100%;
+    grid-template-columns: 1fr min-content;
     align-items: center;
     z-index: 9;
     top: 0px;
-    padding: 0 1rem;
+    padding: .5rem 1rem;
     background-color: $header-background-color;
 
     nav {
@@ -39,7 +40,7 @@ header {
         width: 40px;
         height: 3px;
         background-color: $background-color;
-        margin: 4px;
+        margin: 4px 0;
     }
 }
 

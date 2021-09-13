@@ -5,7 +5,7 @@ footer {
     align-items: flex-end;
     text-align: end;
     width: 100%;
-    background-color: $header-background-color;
+    background-color: darken($background-color, 10);
 }
 
 footer > ul li {
