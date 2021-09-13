@@ -5,10 +5,11 @@ header {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr min-content;
+    grid-template-rows: 1fr;
     align-items: center;
     z-index: 9;
     top: 0px;
-    padding: .5rem 1rem;
+    padding: .2rem 1rem;
     background-color: $header-background-color;
 
     nav {
