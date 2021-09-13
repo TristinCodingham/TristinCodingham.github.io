@@ -6,3 +6,4 @@ const toggleNav = () => {
 }
 
 button.onclick = toggleNav;
+button.ontouchend = toggleNav;
