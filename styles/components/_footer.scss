@@ -1,0 +1,13 @@
+@use '../variables' as *;
+
+footer {
+    display: grid;
+    align-items: flex-end;
+    text-align: end;
+    width: 100%;
+    background-color: $header-background-color;
+}
+
+footer > ul li {
+    list-style: none;
+}

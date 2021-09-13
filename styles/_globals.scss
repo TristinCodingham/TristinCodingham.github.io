@@ -1,0 +1,92 @@
+@use './variables' as *;
+@use './fonts';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+:focus {
+    outline: none;
+    box-shadow: 0px -1px 1px $accent-color inset;
+}
+
+body {
+    position: relative;
+    display: grid;
+    /* 3 rows -- header main footer */
+    grid-template-rows: auto 1fr 200px;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+section {
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Ethnocentric';
+}
+
+h3 {
+    font-family: 'Libre Barcode 39 Text';
+    font-weight: lighter;
+    font-size: xxx-large;
+    width: min-content;
+    color: white;
+}
+
+h4 {
+    font-family: 'Scriptina';
+    font-size: 3rem;
+    letter-spacing: 3px;
+    color: $logo-color;
+    width: max-content;
+}
+
+h6 {
+    font-family: 'Arty';
+    font-size: xxx-large;
+    letter-spacing: 3px;
+}
+
+p {
+    color: $text-color;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+    font-family: 'Source Code Pro';
+}
+
+a i {
+    font-size: x-small;
+    margin-left: 2px;
+}
+
+a:visited {
+    color: $accent-color;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container-xsm {
+    padding: .5rem 1rem;
+}
+
+.container-sm {
+    padding: 2rem 1rem;
+}
+
+.container-md {
+    padding: 100px 1rem;
+}
+
+.container-lg {
+    padding: 100px 2rem;
+}
