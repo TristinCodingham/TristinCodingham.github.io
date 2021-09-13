@@ -124,59 +124,51 @@ ul li {
 header {
   position: relative;
   display: grid;
-  grid-auto-flow: column;
   grid-template-columns: 1fr auto;
   align-items: center;
   z-index: 9;
   top: 0px;
-  left: 0px;
   height: 60px;
   padding: 0 1rem;
-  background-color: #2d2d2d;
-  box-shadow: 1px 1px 5px #2d2d2d;
+  background-color: #ffffff;
 }
-
 header nav {
   position: relative;
   height: 60px;
   width: 100%;
+  justify-self: start;
 }
-
 header nav a {
   display: grid;
   align-items: center;
   height: 60px;
 }
-
 header ul {
   display: none;
+  justify-self: end;
 }
-
 header ul li {
   height: 60px;
 }
-
 header ul li a {
   display: grid;
   align-items: center;
 }
-
 header button {
   background-color: unset;
   border: none;
   cursor: pointer;
 }
-
 header figure div {
   width: 40px;
   height: 3px;
-  background-color: white;
+  background-color: #4d4d4d;
   margin: 4px;
 }
 
 .toggle-nav {
   display: grid;
-  background-color: #2d2d2d;
+  background-color: #4d4d4d;
   width: 100%;
 }
 
@@ -244,7 +236,7 @@ footer {
   align-items: flex-end;
   text-align: end;
   width: 100%;
-  background-color: #2d2d2d;
+  background-color: #ffffff;
 }
 
 footer > ul li {

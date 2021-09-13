@@ -3,58 +3,57 @@
 header {
     position: relative;
     display: grid;
-    grid-auto-flow: column;
     grid-template-columns: 1fr auto;
     align-items: center;
     z-index: 9;
     top: 0px;
-    left: 0px;
     height: 60px;
     padding: 0 1rem;
     background-color: $header-background-color;
-    box-shadow: 1px 1px 5px $header-background-color;
-}
 
-header nav {
-    position: relative;
-    height: 60px;
-    width: 100%;
-}
+    nav {
+        position: relative;
+        height: 60px;
+        width: 100%;
+        justify-self: start;
 
-header nav a {
-    display: grid;
-    align-items: center;
-    height: 60px;
-}
+        a {
+            display: grid;
+            align-items: center;
+            height: 60px;
+        }
+    }
 
-header ul {
-    display: none;
-}
+    ul {
+        display: none;
+        justify-self: end;
 
-header ul li {
-    height: 60px;
-}
+        li {
+            height: 60px;
 
-header ul li a {
-    display: grid;
-    align-items: center;
-}
+            a {
+                display: grid;
+                align-items: center;
+            }
+        }
+    }
 
-header button {
-    background-color: unset;
-    border: none;
-    cursor: pointer;
-}
+    button {
+        background-color: unset;
+        border: none;
+        cursor: pointer;
+    }
 
-header figure div {
-    width: 40px;
-    height: 3px;
-    background-color: white;
-    margin: 4px;
+    figure div {
+        width: 40px;
+        height: 3px;
+        background-color: $background-color;
+        margin: 4px;
+    }
 }
 
 .toggle-nav {
     display: grid;
-    background-color: $header-background-color;
+    background-color: $background-color;
     width: 100%;
 }
