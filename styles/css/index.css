@@ -34,6 +34,10 @@
   font-family: Calibri;
 }
 
+*:after, *:before {
+  box-sizing: border-box;
+}
+
 :focus {
   outline: none;
   box-shadow: 0px -1px 1px #00d6d6 inset;
@@ -125,6 +129,7 @@ header {
   align-items: center;
   z-index: 9;
   top: 0px;
+  left: 0px;
   height: 60px;
   padding: 0 1rem;
   background-color: #2d2d2d;
