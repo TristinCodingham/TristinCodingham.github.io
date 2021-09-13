@@ -21,7 +21,7 @@ body {
     position: relative;
     display: grid;
     /* 3 rows -- header main footer */
-    grid-template-rows: min-content 1fr 200px;
+    grid-template-rows: auto 1fr 200px;
     background-color: $background-color;
     color: $text-color;
 }

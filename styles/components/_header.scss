@@ -3,13 +3,11 @@
 header {
     position: sticky;
     display: grid;
-    width: 100%;
     grid-template-columns: 1fr min-content;
-    grid-template-rows: 1fr;
     align-items: center;
     z-index: 9;
     top: 0px;
-    padding: .2rem 1rem;
+    padding: 0 1rem;
     background-color: $header-background-color;
 
     nav {
@@ -24,6 +22,7 @@ header {
 
     ul {
         display: none;
+        position: absolute;
 
         li a {
             display: grid;
@@ -41,7 +40,7 @@ header {
         width: 40px;
         height: 3px;
         background-color: $background-color;
-        margin: 4px 0;
+        margin: 4px;
     }
 }
 
