@@ -1,7 +1,7 @@
 @use '../variables' as *;
 
 header {
-    position: sticky;
+    position: relative;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 1fr auto;
