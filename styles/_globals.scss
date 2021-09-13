@@ -8,7 +8,7 @@
     font-family: Calibri;
 }
 
-*:after, *:before {
+*::after, *::before {
     box-sizing: border-box;
 }
 
@@ -20,8 +20,8 @@
 body {
     position: relative;
     display: grid;
-    /* 3 rows -- header main footer */
-    grid-template-rows: auto 1fr 200px;
+    /* 3 rows -- header main footer signature*/
+    grid-template-rows: auto 1fr auto;
     background-color: $background-color;
     color: $text-color;
 }
@@ -44,7 +44,7 @@ h3 {
 
 h4 {
     font-family: 'Scriptina';
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 3px;
     color: $logo-color;
     width: max-content;
@@ -52,8 +52,9 @@ h4 {
 
 h6 {
     font-family: 'Arty';
-    font-size: xxx-large;
+    font-size: 2rem;
     letter-spacing: 3px;
+    text-align: center;
 }
 
 p {
@@ -64,15 +65,6 @@ a {
     text-decoration: none;
     color: $text-color;
     font-family: 'Source Code Pro';
-}
-
-a i {
-    font-size: x-small;
-    margin-left: 2px;
-}
-
-a:visited {
-    color: $accent-color;
 }
 
 ul li {

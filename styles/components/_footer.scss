@@ -1,13 +1,33 @@
 @use '../variables' as *;
 
 footer {
-    display: grid;
-    align-items: flex-end;
     text-align: end;
-    width: 100%;
     background-color: darken($background-color, 10);
-}
 
-footer > ul li {
-    list-style: none;
+    div {
+        background-color: $background-color;
+    }
+
+    ul {
+        display: grid;
+        grid-auto-flow: rows;
+        justify-content: center;
+
+        li {
+            list-style: none;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: center;
+            padding: 1rem;
+        }
+    }
+
+    i {
+        font-size: 2rem;
+    }
+
+    a i {
+        font-size: 10px;
+        margin-left: 2px;
+    }
 }

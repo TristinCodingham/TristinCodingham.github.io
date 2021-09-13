@@ -34,7 +34,7 @@
   font-family: Calibri;
 }
 
-*:after, *:before {
+*::after, *::before {
   box-sizing: border-box;
 }
 
@@ -46,8 +46,8 @@
 body {
   position: relative;
   display: grid;
-  /* 3 rows -- header main footer */
-  grid-template-rows: auto 1fr 200px;
+  /* 3 rows -- header main footer signature*/
+  grid-template-rows: auto 1fr auto;
   background-color: #4d4d4d;
   color: #c4c4c4;
 }
@@ -70,7 +70,7 @@ h3 {
 
 h4 {
   font-family: "Scriptina";
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 3px;
   color: #00b6b6;
   width: max-content;
@@ -78,8 +78,9 @@ h4 {
 
 h6 {
   font-family: "Arty";
-  font-size: xxx-large;
+  font-size: 2rem;
   letter-spacing: 3px;
+  text-align: center;
 }
 
 p {
@@ -90,15 +91,6 @@ a {
   text-decoration: none;
   color: #c4c4c4;
   font-family: "Source Code Pro";
-}
-
-a i {
-  font-size: x-small;
-  margin-left: 2px;
-}
-
-a:visited {
-  color: #00d6d6;
 }
 
 ul li {
@@ -128,7 +120,7 @@ header {
   align-items: center;
   z-index: 9;
   top: 0px;
-  padding: 0 1rem;
+  padding: 0.2rem 1rem;
   background-color: #ffffff;
 }
 header nav {
@@ -138,6 +130,8 @@ header nav {
 header nav a {
   display: grid;
   align-items: center;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
 }
 header ul {
   display: none;
@@ -225,15 +219,30 @@ main section:nth-child(even) {
 }
 
 footer {
-  display: grid;
-  align-items: flex-end;
   text-align: end;
-  width: 100%;
   background-color: #343434;
 }
-
-footer > ul li {
+footer div {
+  background-color: #4d4d4d;
+}
+footer ul {
+  display: grid;
+  grid-auto-flow: rows;
+  justify-content: center;
+}
+footer ul li {
   list-style: none;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 1rem;
+}
+footer i {
+  font-size: 2rem;
+}
+footer a i {
+  font-size: 10px;
+  margin-left: 2px;
 }
 
 /*# sourceMappingURL=index.css.map */
