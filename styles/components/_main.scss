@@ -1,4 +1,5 @@
 @use '../variables' as *;
+@use '../functions' as *;
 
 @keyframes scanner {
     0% {
@@ -22,17 +23,29 @@
     }
 }
 
-main section:nth-child(1) {
+main section {
+    position: relative;
+    overflow-x: hidden;
+    background-color: $background-color;
+}
+
+main section:nth-child(2) {
+    /* HERO SECTION */
     background: url('../../assets/images/alexey-ruban-73o_FzZ5x-w-unsplash.jpg');
     background-position: center;
     background-size: cover;
     background-blend-mode: color-burn;
 }
 
-main section {
+main section:nth-child(odd) {
+    position: sticky;
+    top: 0px;
+}
+
+main section:nth-child(even) {
     position: relative;
-    overflow-x: hidden;
-    background-color: $background-color;
+    background-color: $accent-background-color;
+    z-index: 1;
 }
 
 main section h3 div {
@@ -49,13 +62,19 @@ main section h3 div {
     animation-fill-mode: forwards;
 }
 
-main section:nth-child(odd) {
-    position: sticky;
-    background-color: $accent-background-color;
-    top: 0px;
-}
+.back-to-top {
+    border: none;
+    border-radius: 0px;
+    background-color: $background-color;
+    position: fixed;
+    top: 90vh;
+    left: 80vw;
+    z-index: 9;
+    justify-self: end;
+    padding: 1rem 1rem;
 
-main section:nth-child(even) {
-    position: relative;
-    z-index: 2;
+    a i{
+        position: relative;
+        color: $accent-color;
+    }
 }

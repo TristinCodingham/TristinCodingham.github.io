@@ -19,6 +19,7 @@ header {
             align-items: center;
             grid-auto-flow: column;
             grid-template-columns: auto 1fr;
+            color: colorLightness($header-background-color);
         }
     }
 

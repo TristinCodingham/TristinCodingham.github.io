@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 @mixin defaultProperties {
     padding: 0;
     margin: 0;
@@ -11,11 +13,11 @@
     height: $height;
 }
 
-@function textLightness($color) {
+@function colorLightness($color) {
     @if(lightness($color) > 80) {
-        @return #333;
+        @return darken($text-color, 20);
     } @else {
-        @return #fff;
+        @return $text-color;
     }
 }
 

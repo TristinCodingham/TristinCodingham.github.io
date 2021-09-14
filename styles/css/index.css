@@ -49,7 +49,7 @@ body {
   /* 3 rows -- header main footer signature*/
   grid-template-rows: auto 1fr auto;
   background-color: #4d4d4d;
-  color: #c4c4c4;
+  color: #ffffff;
 }
 
 section {
@@ -86,12 +86,12 @@ h6 {
 }
 
 p {
-  color: #c4c4c4;
+  color: #ffffff;
 }
 
 a {
   text-decoration: none;
-  color: #c4c4c4;
+  color: #ffffff;
   font-family: "Source Code Pro";
 }
 
@@ -134,6 +134,7 @@ header nav a {
   align-items: center;
   grid-auto-flow: column;
   grid-template-columns: auto 1fr;
+  color: colorLightness(#ffffff);
 }
 header ul {
   display: none;
@@ -182,17 +183,29 @@ header figure div {
     width: 0%;
   }
 }
-main section:nth-child(1) {
+main section {
+  position: relative;
+  overflow-x: hidden;
+  background-color: #4d4d4d;
+}
+
+main section:nth-child(2) {
+  /* HERO SECTION */
   background: url("../../assets/images/alexey-ruban-73o_FzZ5x-w-unsplash.jpg");
   background-position: center;
   background-size: cover;
   background-blend-mode: color-burn;
 }
 
-main section {
+main section:nth-child(odd) {
+  position: sticky;
+  top: 0px;
+}
+
+main section:nth-child(even) {
   position: relative;
-  overflow-x: hidden;
-  background-color: #4d4d4d;
+  background-color: #007474;
+  z-index: 1;
 }
 
 main section h3 div {
@@ -209,15 +222,20 @@ main section h3 div {
   animation-fill-mode: forwards;
 }
 
-main section:nth-child(odd) {
-  position: sticky;
-  background-color: #006d6d;
-  top: 0px;
+.back-to-top {
+  border: none;
+  border-radius: 0px;
+  background-color: #4d4d4d;
+  position: fixed;
+  top: 90vh;
+  left: 80vw;
+  z-index: 9;
+  justify-self: end;
+  padding: 1rem 1rem;
 }
-
-main section:nth-child(even) {
+.back-to-top a i {
   position: relative;
-  z-index: 2;
+  color: #00ffff;
 }
 
 footer {
