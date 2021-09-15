@@ -13,11 +13,11 @@
     height: $height;
 }
 
-@function colorLightness($color) {
-    @if(lightness($color) > 80) {
-        @return darken($text-color, 20);
+@function colorLightness($bgColor) {
+    @if(lightness($bgColor) > 80) {
+        @return $text-color-dark;
     } @else {
-        @return $text-color;
+        @return $text-color-light;
     }
 }
 

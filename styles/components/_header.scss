@@ -20,7 +20,7 @@ header {
             align-items: center;
             grid-auto-flow: column;
             grid-template-columns: auto 1fr;
-            color: colorLightness($header-background-color);
+            color: $text-color-dark;
         }
     }
 
@@ -28,9 +28,19 @@ header {
         display: none;
         position: absolute;
 
+        li {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: max-content 1fr;
+            align-items: center;
+        }
+
         li a {
             display: grid;
             align-items: center;
+            color: $text-color-light;
+            padding: 1.5rem 1rem;
+            border-bottom: 1px solid $text-color-dark;
         }
     }
 

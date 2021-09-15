@@ -24,7 +24,7 @@ body {
     /* 3 rows -- header main footer signature*/
     grid-template-rows: auto 1fr auto;
     background-color: $background-color;
-    color: $text-color;
+    color: $text-color-light;
 }
 
 section {
@@ -41,7 +41,7 @@ h3 {
     font-weight: lighter;
     font-size: 3rem;
     width: min-content;
-    color: white;
+    color: $text-color-light;
 }
 
 h4 {
@@ -61,12 +61,12 @@ h6 {
 }
 
 p {
-    color: $text-color;
+    color: darken($text-color-light, 10);
 }
 
 a {
     text-decoration: none;
-    color: $text-color;
+    color: $text-color-light;
     font-family: 'Source Code Pro';
 }
 
