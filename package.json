@@ -4,13 +4,18 @@
   "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/2dcb8855-f3c5-43fe-97c1-80c81efc4fc7/deploy-status)](https://app.netlify.com/sites/codingham-co-za/deploys)",
   "main": "scripts.js",
   "scripts": {
-    "autoprefixer": "postcss styles/css/index.css --use autoprefixer -d styles/css/"
+    "sass-parser": "rm styles/css/index.css && sass styles/css/index.scss styles/css/index.css",
+    "autoprefixer": "postcss styles/css/index.css --use autoprefixer -d styles/css/",
+    "bundle-css": "npm run sass-parser && npm run autoprefixer",
+    "validate-css": "vnu.bat --css styles/css/index.css --asciiquotes",
+    "validate-html": "vnu.bat index.html",
+    "validate-all": "vnu.bat index.html styles/css/index.css --skip-non-html --skip-non-css"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TristinCodingham/codingham-co-za.git"
   },
-  "keywords": [],
+  "keywords": ["Web Developer", "Frontend", "Profile", "HTML", "HTML5", "CSS", "CSS3", "Javascript", "ECMAScript 7"],
   "author": "Tristin Cunningham",
   "license": "ISC",
   "bugs": {

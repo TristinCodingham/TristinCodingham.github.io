@@ -1,27 +1,6 @@
 @use '../variables' as *;
 @use '../functions' as *;
-
-@keyframes scanner {
-    0% {
-        bottom: 0;
-    }
-    25% {
-        background-color: red;
-        box-shadow: 2px 2px 10px red;
-    }
-    50% {
-        bottom: 96px;
-    }
-    75% {
-        background-color: red;
-        box-shadow: 2px 2px 10px red;
-        bottom: 0;
-        width: 100%;
-    }
-    100% {
-        width: 0%;
-    }
-}
+@use '../animations' as *;
 
 main section {
     position: relative;
@@ -48,7 +27,8 @@ main section:nth-child(even) {
     z-index: 1;
 }
 
-main section h3 div {
+main section h3 span {
+    display: block;
     position: relative;
     overflow-x: hidden;
     width: 100%;
@@ -56,25 +36,24 @@ main section h3 div {
     background-color: rgb(173, 0, 0);
     z-index: 2;
     animation-name: scanner;
-    animation-duration: 1s;
-    animation-delay: 500ms;
+    animation-duration: 4s;
+    animation-delay: 1s;
     animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
     animation-fill-mode: forwards;
 }
 
 .back-to-top {
+    position: fixed;
     border: none;
     border-radius: 0px;
     background-color: $background-color;
-    position: fixed;
     top: 90vh;
     left: 80vw;
     z-index: 9;
     justify-self: end;
     padding: 1rem 1rem;
 
-    a i{
-        position: relative;
+    i{
         color: $accent-color;
     }
 }
