@@ -75,7 +75,8 @@ h2 {
 h3 {
   font-family: "Ethnocentric";
   font-size: 1.5rem;
-  letter-spacing: 3px;
+  font-weight: lighter;
+  letter-spacing: 1px;
   color: #00ffff;
 }
 
@@ -223,9 +224,18 @@ main section:nth-child(2) {
   background-blend-mode: color-burn;
 }
 
+main section:nth-child(3) {
+  /* HERO SECTION */
+  background: url("../../assets/images/jordon-conner-tIr-PWgSYB4-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
 main section:nth-child(odd) {
   position: sticky;
   top: 0px;
+  background-color: #4d4d4d;
 }
 
 main section:nth-child(even) {

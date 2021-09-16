@@ -31,9 +31,18 @@ main section:nth-child(2) {
     background-blend-mode: color-burn;
 }
 
+main section:nth-child(3) {
+    /* HERO SECTION */
+    background: url('../../assets/images/jordon-conner-tIr-PWgSYB4-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
 main section:nth-child(odd) {
     position: sticky;
     top: 0px;
+    background-color: $background-color;
 }
 
 main section:nth-child(even) {
