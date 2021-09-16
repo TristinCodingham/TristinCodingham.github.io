@@ -44,14 +44,14 @@ main section h3 span {
 
 .back-to-top {
     position: fixed;
+    background-color: darken($accent-background-color, 10);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     border: none;
     border-radius: 0px;
-    background-color: $background-color;
     top: 90vh;
     left: 80vw;
     z-index: 9;
-    justify-self: end;
-    padding: 1rem 1rem;
+    padding: .5rem 1rem;
 
     i{
         color: $accent-color;

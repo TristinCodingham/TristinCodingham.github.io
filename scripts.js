@@ -1,10 +1,9 @@
 const navUl = document.getElementById("nav-ul");
 const button = document.getElementById("nav-hamburger");
-let isOpen = false;
+const date = document.getElementById("powered-by-date");
 
 const toggleNav = () => {
     navUl.classList.toggle("toggle-nav");
-    isOpen = true;
 }
 
 const closeNav = () => {
@@ -15,3 +14,5 @@ const closeNav = () => {
 
 //window.addEventListener('click', closeNav);
 button.addEventListener('click', toggleNav);
+
+date.innerText = new Date().getFullYear();

@@ -1,7 +1,7 @@
 @use '../variables' as *;
 
 footer {
-    text-align: end;
+    text-align: center;
     background-color: darken($background-color, 10);
 
     div {
