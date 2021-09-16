@@ -60,8 +60,9 @@ h1 {
   font-family: "Scriptina";
   color: #00ffff;
   letter-spacing: 5px;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: lighter;
+  width: min-content;
 }
 
 h2 {
@@ -161,12 +162,8 @@ header button {
   border: none;
   cursor: pointer;
 }
-header span {
-  display: block;
-  width: 40px;
-  height: 3px;
-  background-color: #4d4d4d;
-  margin: 4px;
+header i {
+  font-size: 25px;
 }
 
 .toggle-nav {
@@ -215,6 +212,12 @@ main section h2 span {
   animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   animation-fill-mode: forwards;
 }
+main section .triangle {
+  width: 25px;
+  height: 25px;
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+  background-color: #00ffff;
+}
 
 main section:nth-child(2) {
   /* HERO SECTION */
@@ -222,14 +225,6 @@ main section:nth-child(2) {
   background-position: center;
   background-size: cover;
   background-blend-mode: color-burn;
-}
-
-main section:nth-child(3) {
-  /* HERO SECTION */
-  background: url("../../assets/images/jordon-conner-tIr-PWgSYB4-unsplash.jpg");
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: darken;
 }
 
 main section:nth-child(odd) {

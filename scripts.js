@@ -12,6 +12,8 @@ const closeNav = () => {
     }
 }
 
+document.getElementById("logo-link").focus();
+
 //window.addEventListener('click', closeNav);
 button.addEventListener('click', toggleNav);
 

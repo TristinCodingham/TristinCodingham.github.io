@@ -21,6 +21,13 @@ main section {
         animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
         animation-fill-mode: forwards;
     }
+
+    .triangle {
+        width: 25px;
+        height: 25px;
+        clip-path: polygon(0 0, 0 100%, 100% 50%);
+        background-color: $accent-color;
+    }
 }
 
 main section:nth-child(2) {
@@ -29,14 +36,6 @@ main section:nth-child(2) {
     background-position: center;
     background-size: cover;
     background-blend-mode: color-burn;
-}
-
-main section:nth-child(3) {
-    /* HERO SECTION */
-    background: url('../../assets/images/jordon-conner-tIr-PWgSYB4-unsplash.jpg');
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: darken;
 }
 
 main section:nth-child(odd) {

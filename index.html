@@ -21,7 +21,7 @@
 <body id="page-top">
     <header>
         <nav>
-            <a href="/" aria-label="Home">
+            <a href="/" aria-label="Home" tabindex="1" id="logo-link">
                 <img 
                     src="assets/images/c-logo-paralellogram.png"
                     alt="Codingham Logo"
@@ -31,56 +31,60 @@
             </a>
             <ul id="nav-ul">
                 <li>
-                    <a href="./pages/about.html" aria-label="About">
+                    <a href="./pages/about.html" aria-label="About" tabindex="3">
                         /About
                     </a>
                 </li>
                 <li>
-                    <a href="./pages/contact.html" aria-label="Contact">
+                    <a href="./pages/contact.html" aria-label="Contact" tabindex="4">
                         /Contact
                     </a>
                 </li>
                 <li>
                     <i class="fas fa-id-card"></i>
-                    <a href="" target="_blank" aria-label="CV">
+                    <a href="" target="_blank" aria-label="CV" tabindex="5">
                         CV<i class="fas fa-external-link-alt"></i>
                     </a>
                 </li>
                 <li>
                     <i class="fab fa-github"></i>
-                    <a href="https://www.github.com/TristinCodingham" target="_blank" aria-label="Github">
+                    <a href="https://www.github.com/TristinCodingham" target="_blank" aria-label="Github" tabindex="6">
                         Github<i class="fas fa-external-link-alt"></i>
                     </a>
                 </li>
                 <li>
                     <i class="fab fa-twitter"></i>
-                    <a href="https://www.twitter.com/Codingham" target="_blank" aria-label="Twitter">
+                    <a href="https://www.twitter.com/Codingham" target="_blank" aria-label="Twitter" tabindex="7">
                         Twitter<i class="fas fa-external-link-alt"></i>
                     </a>
                 </li>
                 <li>
                     <i class="fas fa-code"></i>
-                    <a href="https://www.codewars.com/users/Codingham" target="_blank" aria-label="Codewars">
+                    <a href="https://www.codewars.com/users/Codingham" target="_blank" aria-label="Codewars" tabindex="8">
                         Codewars<i class="fas fa-external-link-alt"></i>
                     </a>
                 </li>
             </ul>
         </nav>
-        <button id="nav-hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <button id="nav-hamburger" aria-label="Navigation button" tabindex="2">
+            <i class="fas fa-bars"></i>
         </button>
     </header>
     <main>
-        <a href="#page-top" class="back-to-top">
+        <a href="#page-top" class="back-to-top" aria-label="Back to top">
             <i class="fas fa-chevron-up"></i>
         </a>
         
         <section class="container-md">
             <!-- Intro -->
             <h1>Frontend</h1>
-            <h2>Web Developer<span></span></h2>
+            <h2>
+                Web Developer
+                <span><!-- SCANNER Animation --></span>
+            </h2>
+            <div class="triangle" aria-hidden="true">
+                <div></div>
+            </div>
             <hr>
         </section>
 
@@ -112,7 +116,7 @@
         </section>
 
         <section class="container-md">
-            <h2>Accessibility</h2>
+            <h2>Accessible</h2>
             <hr>
             <div class="container-lg">
                 <h3>ipsum</h3>
@@ -121,7 +125,7 @@
         </section>
         
         <section class="container-md">
-            <h2>Simple Effective</h2>
+            <h2>SEO Friendly</h2>
             <hr>
             <div class="container-lg">
                 <h3>ipsum</h3>
