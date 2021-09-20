@@ -32,7 +32,7 @@ section {
 }
 
 h1 {
-    font-family: 'Scriptina', sans-serif;
+    font-family: 'Pattaya', sans-serif;
     color: $accent-color;
     letter-spacing: 3px;
 }
@@ -67,6 +67,15 @@ a {
     text-decoration: none;
     color: $text-color-light;
     font-family: 'Source Code Pro', sans-serif;
+}
+
+.c-t-a {
+    display: block;
+    color: $accent-color;
+    background-color: $accent-background-color;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+
+    padding: 20px 0;
 }
 
 ul li {
