@@ -7,12 +7,20 @@ main section {
     overflow-x: hidden;
     background-color: $background-color;
 
+    h2 {
+        clip-path: polygon(0% 0%, 0% 0%, -25% 100%, 0% 100%);
+        animation-name: skewed-mask;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+
     h2 span {
         display: block;
         position: relative;
         overflow-x: hidden;
         width: 100%;
-        height: 0.1px;
+        height: 3px;
         z-index: 2;
         background-color: rgb(173, 0, 0);
         animation-name: scanner;
