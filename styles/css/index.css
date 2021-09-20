@@ -77,6 +77,7 @@ h3 {
   letter-spacing: 1px;
   color: #00ffff;
   margin-bottom: 20px;
+  font-variant: small-caps;
 }
 
 h4 {
@@ -210,9 +211,9 @@ main section h2 span {
   z-index: 2;
   background-color: #ad0000;
   animation-name: scanner;
-  animation-duration: 4s;
-  animation-delay: 1s;
-  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
 main section .triangle {
@@ -250,6 +251,21 @@ main section:nth-child(even) {
 }
 main section:nth-child(even) div {
   border: 1px solid #008383;
+}
+
+.quick-start {
+  text-align: center;
+}
+.quick-start li {
+  padding: 5px;
+}
+.quick-start li a {
+  display: block;
+}
+.quick-start .c-t-a {
+  color: #00ffff;
+  background-color: #007474;
+  padding: 20px 0;
 }
 
 .back-to-top {
