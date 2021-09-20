@@ -66,6 +66,8 @@ h2 {
   font-family: "Libre Barcode 39 Text", sans-serif;
   font-weight: lighter;
   font-size: 3rem;
+  width: -webkit-min-content;
+  width: -moz-min-content;
   width: min-content;
   color: #ffffff;
 }
@@ -126,6 +128,7 @@ ul li {
 header {
   position: sticky;
   display: grid;
+  grid-template-columns: 1fr -webkit-min-content;
   grid-template-columns: 1fr min-content;
   align-items: center;
   z-index: 9;
@@ -151,6 +154,7 @@ header ul {
 header ul li {
   display: grid;
   grid-auto-flow: column;
+  grid-template-columns: -webkit-max-content 1fr;
   grid-template-columns: max-content 1fr;
   align-items: center;
 }
@@ -176,6 +180,28 @@ header i {
   width: 100%;
 }
 
+@-webkit-keyframes scanner {
+  0% {
+    bottom: 0;
+  }
+  25% {
+    background-color: red;
+    box-shadow: 5px 5px 10px red;
+  }
+  50% {
+    bottom: 96px;
+  }
+  75% {
+    background-color: red;
+    box-shadow: 5px 5px 10px red;
+    bottom: 0;
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
 @keyframes scanner {
   0% {
     bottom: 0;
@@ -197,9 +223,16 @@ header i {
     width: 0%;
   }
 }
+@-webkit-keyframes skewed-mask {
+  to {
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
 @keyframes skewed-mask {
   to {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
 main section {
@@ -208,12 +241,18 @@ main section {
   background-color: #4d4d4d;
 }
 main section h2 {
-  clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-  animation-name: skewed-mask;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
+  -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+          clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+  -webkit-animation-name: skewed-mask;
+          animation-name: skewed-mask;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 main section h2 span {
   display: block;
@@ -223,16 +262,22 @@ main section h2 span {
   height: 3px;
   z-index: 2;
   background-color: #ad0000;
-  animation-name: scanner;
-  animation-duration: 2s;
-  animation-delay: 2s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: scanner;
+          animation-name: scanner;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 main section .triangle {
   width: 25px;
   height: 25px;
-  clip-path: polygon(0 0, 0 100%, 100% 50%);
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 50%);
+          clip-path: polygon(0 0, 0 100%, 100% 50%);
   background-color: #00ffff;
 }
 
@@ -293,7 +338,8 @@ main section:nth-child(even) div {
   width: 50px;
   height: 50px;
   z-index: 9;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 .back-to-top i {
   color: #00ffff;
@@ -328,4 +374,4 @@ footer a i {
   font-size: 2rem;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL19mb250cy5zY3NzIiwiaW5kZXguY3NzIiwiLi4vX2dsb2JhbHMuc2NzcyIsIi4uL192YXJpYWJsZXMuc2NzcyIsIi4uL2NvbXBvbmVudHMvX2hlYWRlci5zY3NzIiwiLi4vX2FuaW1hdGlvbnMuc2NzcyIsIi4uL2NvbXBvbmVudHMvX21haW4uc2NzcyIsIi4uL2NvbXBvbmVudHMvX2Zvb3Rlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksb0JBQUE7RUFDQSxtRUFBQTtFQUNBLDBFQUFBO0VBQ0EscUVBQUE7RUFDQSxzRUFBQTtFQUNBLG1CQUFBO0VBQ0Esa0JBQUE7QUNDSjtBREVBO0VBQ0ksb0NBQUE7RUFDQSxtRkFBQTtBQ0FKO0FER0E7RUFDSSw4QkFBQTtFQUNBLHNFQUFBO0FDREo7QURJQTtFQUNJLHdCQUFBO0VBQ0EscURBQUE7QUNGSjtBREtBO0VBQ0ksMkJBQUE7RUFDQSwrREFBQTtBQ0hKO0FETUE7RUFDSSxtQkFBQTtFQUNBLGdFQUFBO0FDSko7QUN4QkE7RUFDSSxVQUFBO0VBQ0EsU0FBQTtFQUNBLHNCQUFBO0VBQ0EsZ0NBQUE7QUQwQko7O0FDdkJBO0VBQ0ksc0JBQUE7QUQwQko7O0FDdkJBO0VBQ0ksYUFBQTtFQUNBLHNDQUFBO0FEMEJKOztBQ3ZCQTtFQUNJLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLDBDQUFBO0VBQ0EsaUNBQUE7RUFDQSx5QkN2QmU7RUR3QmYsY0MxQmU7QUZvRG5COztBQ3ZCQTtFQUNJLGlCQUFBO0FEMEJKOztBQ3ZCQTtFQUNJLG9DQUFBO0VBQ0EsY0MvQlc7RURnQ1gsbUJBQUE7QUQwQko7O0FDdkJBO0VBQ0ksZ0RBQUE7RUFDQSxvQkFBQTtFQUNBLGVBQUE7RUFDQSwwQkFBQTtFQUFBLHVCQUFBO0VBQUEsa0JBQUE7RUFDQSxjQzVDZTtBRnNFbkI7O0FDdkJBO0VBQ0ksdUNBQUE7RUFDQSxpQkFBQTtFQUNBLG9CQUFBO0VBQ0EsbUJBQUE7RUFDQSxjQ2hEVztFRGlEWCxtQkFBQTtF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 */
