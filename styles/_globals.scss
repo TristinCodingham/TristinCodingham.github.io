@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Calibri;
+    font-family: Calibri, sans-serif;
 }
 
 *::after, *::before {
@@ -32,16 +32,13 @@ section {
 }
 
 h1 {
-    font-family: 'Scriptina';
+    font-family: 'Scriptina', sans-serif;
     color: $accent-color;
-    letter-spacing: 5px;
-    font-size: 3rem;
-    font-weight: lighter;
-    width: min-content;
+    letter-spacing: 3px;
 }
 
 h2 {
-    font-family: 'Libre Barcode 39 Text';
+    font-family: 'Libre Barcode 39 Text', sans-serif;
     font-weight: lighter;
     font-size: 3rem;
     width: min-content;
@@ -49,29 +46,26 @@ h2 {
 }
 
 h3 {
-    font-family: 'Ethnocentric';
+    font-family: 'Ethnocentric', sans-serif;
     font-size: 1.5rem;
     font-weight: lighter;
     letter-spacing: 1px;
     color: $accent-color;
+    margin-bottom: 20px;
 }
 
 h4 {
-    font-family: 'Arty';
+    font-family: 'Arty', sans-serif;
     font-size: 2rem;
     letter-spacing: 3px;
     color: $accent-color;
     text-align: center;
 }
 
-p {
-    color: darken($text-color-light, 10);
-}
-
 a {
     text-decoration: none;
     color: $text-color-light;
-    font-family: 'Source Code Pro';
+    font-family: 'Source Code Pro', sans-serif;
 }
 
 ul li {
@@ -91,5 +85,14 @@ ul li {
 }
 
 .container-lg {
-    padding: 100px 2rem;
+    padding: 100px 200px;
+}
+
+.border {
+    border: 1px solid darken($background-color, 5);
+    margin-top: 20px;
+}
+
+.center-text {
+    text-align: center;
 }
