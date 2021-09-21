@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Calibri, sans-serif;
+    font-family: "Calibri", sans-serif;
 }
 
 *::after, *::before {
@@ -63,6 +63,12 @@ h4 {
     text-align: center;
 }
 
+p {
+    text-align: justify;
+    line-height: 3ch;
+    max-width: 50ch;
+}
+
 a {
     text-decoration: none;
     color: $text-color-light;
@@ -73,9 +79,10 @@ a {
     display: block;
     color: $accent-color;
     background-color: $accent-background-color;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    max-width: 200px;
     padding: 20px 0;
+    margin: 0 auto;
 }
 
 ul li {
