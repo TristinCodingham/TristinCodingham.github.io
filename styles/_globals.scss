@@ -23,7 +23,6 @@ body {
     display: grid;
     /* 3 rows -- header main footer signature*/
     grid-template-rows: auto 1fr auto;
-    background-color: $background-color;
     color: $text-color-light;
 }
 
@@ -65,7 +64,7 @@ h4 {
 
 p {
     text-align: justify;
-    line-height: 3ch;
+    line-height: 2.5ch;
     max-width: 50ch;
 }
 
@@ -78,7 +77,7 @@ a {
 .c-t-a {
     display: block;
     color: $accent-color;
-    background-color: $accent-background-color;
+    border: 1px solid;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     max-width: 200px;
     padding: 20px 0;
@@ -112,4 +111,8 @@ ul li {
 
 .center-text {
     text-align: center;
+}
+
+.fa-external-link-alt {
+    font-size: 10px;
 }

@@ -15,16 +15,20 @@ footer {
 
         li a{
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: minmax(200px, 200px);
             text-align: center;
             padding: 1rem;
             list-style: none;
-        }
-    }
 
-    a i {
-        font-size: 10px;
-        margin-left: 2px;
+            span {
+                position: relative;
+                text-align: center;
+            }
+            span i {
+                position: absolute;
+                right: 0;
+            }
+        }
     }
 }
 

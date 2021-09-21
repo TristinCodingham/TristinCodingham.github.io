@@ -48,7 +48,6 @@ body {
   display: grid;
   /* 3 rows -- header main footer signature*/
   grid-template-rows: auto 1fr auto;
-  background-color: #4d4d4d;
   color: #ffffff;
 }
 
@@ -90,7 +89,7 @@ h4 {
 
 p {
   text-align: justify;
-  line-height: 3ch;
+  line-height: 2.5ch;
   max-width: 50ch;
 }
 
@@ -103,7 +102,7 @@ a {
 .c-t-a {
   display: block;
   color: #00ffff;
-  background-color: #007474;
+  border: 1px solid;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   max-width: 200px;
   padding: 20px 0;
@@ -131,7 +130,7 @@ ul li {
 }
 
 .border {
-  border: 1px solid #404040;
+  border: 1px solid #303030;
   margin-top: 20px;
 }
 
@@ -139,10 +138,12 @@ ul li {
   text-align: center;
 }
 
+.fa-external-link-alt {
+  font-size: 10px;
+}
+
 header {
   position: sticky;
-  display: grid;
-  grid-template-columns: 1fr min-content;
   align-items: center;
   z-index: 9;
   top: 0px;
@@ -151,45 +152,50 @@ header {
 }
 header nav {
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr min-content;
   width: 100%;
 }
 header nav a {
   display: grid;
   align-items: center;
   grid-auto-flow: column;
-  grid-template-columns: auto 1fr;
   color: #000000;
 }
 header ul {
   display: none;
   position: absolute;
+  background-color: #242424;
+  width: min-content;
 }
 header ul li {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: max-content 1fr;
+  display: inline;
   align-items: center;
 }
 header ul li a {
   display: grid;
   align-items: center;
+  justify-content: space-between;
   color: #ffffff;
   padding: 1.5rem 1rem;
   border-bottom: 1px solid #000000;
+}
+header ul li a i {
+  font-size: 2rem;
+  padding: 0 15px;
 }
 header button {
   background-color: unset;
   border: none;
   cursor: pointer;
+  z-index: 9;
 }
-header i {
+header button i {
   font-size: 25px;
 }
 
 .toggle-nav {
   display: grid;
-  background-color: #4d4d4d;
-  width: 100%;
 }
 
 @keyframes scanner {
@@ -201,7 +207,7 @@ header i {
     box-shadow: 5px 5px 10px red;
   }
   50% {
-    bottom: 96px;
+    bottom: 48px;
   }
   75% {
     background-color: red;
@@ -221,7 +227,7 @@ header i {
 main section {
   position: relative;
   overflow-x: hidden;
-  background-color: #4d4d4d;
+  background-color: #3d3d3d;
 }
 main section h2 {
   clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
@@ -253,14 +259,14 @@ main section .triangle {
   border-bottom: 21.650635px solid #00ffff;
 }
 
-main section:nth-child(2) {
+main section:nth-child(1) {
   /* HERO SECTION */
   background: url("../../assets/images/alexey-ruban-73o_FzZ5x-w-unsplash.jpg");
   background-position: center;
   background-size: cover;
   background-blend-mode: color-burn;
 }
-main section:nth-child(2) div.container-md {
+main section:nth-child(1) div.container-md {
   border: none !important;
 }
 
@@ -268,19 +274,19 @@ main section:nth-child(odd) {
   position: sticky;
   top: 0px;
   color: #ffffff !important;
-  background-color: #4d4d4d;
+  background-color: #007474;
 }
 main section:nth-child(odd) div.container-md {
-  border: 1px solid #454545;
+  border: 1px solid #008383;
 }
 
 main section:nth-child(even) {
   position: relative;
-  background-color: #007474;
+  background-color: #3d3d3d;
   z-index: 1;
 }
 main section:nth-child(even) div.container-md {
-  border: 1px solid #008383;
+  border: 1px solid #353535;
 }
 
 .quick-start {
@@ -313,10 +319,10 @@ main section:nth-child(even) div.container-md {
 
 footer {
   text-align: center;
-  background-color: #343434;
+  background-color: #242424;
 }
 footer div {
-  background-color: #4d4d4d;
+  background-color: #3d3d3d;
 }
 footer ul {
   display: grid;
@@ -325,14 +331,18 @@ footer ul {
 }
 footer ul li a {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(200px, 200px);
   text-align: center;
   padding: 1rem;
   list-style: none;
 }
-footer a i {
-  font-size: 10px;
-  margin-left: 2px;
+footer ul li a span {
+  position: relative;
+  text-align: center;
+}
+footer ul li a span i {
+  position: absolute;
+  right: 0;
 }
 
 .link-icon {
