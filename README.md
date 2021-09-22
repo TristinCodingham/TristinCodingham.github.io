@@ -1,3 +1,3 @@
 # Official Website
-## https://tristincodingham.github.io/codingham-co-za/
+## https://TristinCodingham/TristinCodingham.github.io
 ## Author: Tristin Cunningham

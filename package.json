@@ -1,7 +1,7 @@
 {
   "name": "codingham-co-za",
   "version": "1.0.0",
-  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/2dcb8855-f3c5-43fe-97c1-80c81efc4fc7/deploy-status)](https://app.netlify.com/sites/codingham-co-za/deploys)",
+  "description": "",
   "main": "scripts.js",
   "scripts": {
     "sass-parser": "rm styles/css/index.css && sass styles/css/index.scss styles/css/index.css",
@@ -13,15 +13,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TristinCodingham/codingham-co-za.git"
+    "url": "git+https://github.com/TristinCodingham/TristinCodingham.github.io.git"
   },
   "keywords": ["Web Developer", "Frontend", "Profile", "HTML", "HTML5", "CSS", "CSS3", "Javascript", "ECMAScript 7"],
   "author": "Tristin Cunningham",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TristinCodingham/codingham-co-za/issues"
+    "url": "https://github.com/TristinCodingham/TristinCodingham.github.io/issues"
   },
-  "homepage": "https://github.com/TristinCodingham/codingham-co-za#readme",
+  "homepage": "https://github.com/TristinCodingham/TristinCodingham.github.io/#readme",
   "devDependencies": {
     "autoprefixer": "^10.3.4",
     "postcss": "^8.3.6",
