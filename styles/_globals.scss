@@ -74,11 +74,22 @@ a {
 .c-t-a {
     display: block;
     max-width: 200px;
-    margin: 0 auto;
+    margin: 1rem auto;
     padding: 20px 0;
-    border: 1px solid;
-    color: $accent-color;
+    font-family: 'Source Code Pro', sans-serif;
+    color: $text-color-light;
+    background-color: $accent-background-color;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.c-t-a-ghost {
+    color: $accent-color;
+    background-color: unset;
+    border: 1px solid;
+}
+
+abbr {
+    font-family: 'Ethnocentric', sans-serif;
 }
 
 ul li {
