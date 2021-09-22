@@ -21,48 +21,49 @@ header {
             grid-auto-flow: column;
             color: $text-color-dark;
         }
-    }
 
-    ul {
-        display: none;
-        position: absolute;
-        background-color: darken($background-color, 10);
-        width: min-content;
-
-        li {
-            display: inline;
-            align-items: center;
-
-            a {
-                display: grid;
-                align-items: center;
-                justify-content: space-between;
-                color: $text-color-light;
-                padding: 1.5rem 1rem;
-                border-bottom: 1px solid $text-color-dark;
-
-                i {
-                    font-size: 2rem;
-                    padding: 0 15px;
-                }
-            }   
-        }
-    }
-
-    button {
-        background-color: unset;
-        border: none;
-        cursor: pointer;
-        z-index: 9;
-
-        i {
-            font-size: 25px;
-        }
-    }
-
+        button {
+            background-color: unset;
+            border: none;
+            cursor: pointer;
+            z-index: 9;
     
+            i {
+                font-size: 25px;
+            }
+        }
+
+        ul {
+            display: none;
+            position: absolute;
+            background-color: darken($background-color, 10);
+            width: min-content;
+    
+            li {
+                display: block;
+                align-items: center;
+    
+                a {
+                    display: grid;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: $text-color-light;
+                    padding: 1.5rem 1rem;
+                    border-bottom: 1px solid $text-color-dark;
+    
+                    i {
+                        font-size: 2rem;
+                        padding: 0 15px;
+                    }
+                }
+            }
+            li:last-child {
+                border-bottom: none;
+            }
+        }
+    } 
 }
 
 .toggle-nav {
-    display: grid;
+    display: block;
 }

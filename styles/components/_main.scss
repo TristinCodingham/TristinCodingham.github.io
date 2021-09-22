@@ -31,13 +31,7 @@ main section {
         animation-fill-mode: forwards;
     }
 
-    .triangle {
-        width: 0;
-        height: 0;
-        border-right: 12.5px solid  transparent; 
-        border-left: 12.5px solid  transparent; 
-        border-bottom: 21.650635px solid $accent-color;
-    }
+    
 }
 
 main section:nth-child(1) {
@@ -102,4 +96,12 @@ main section:nth-child(even) {
     i{
         color: $accent-color;
     }
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-right: 12.5px solid  transparent; 
+    border-left: 12.5px solid  transparent; 
+    border-bottom: 21.650635px solid $accent-color;
 }

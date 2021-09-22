@@ -44,10 +44,8 @@
 }
 
 body {
+  /* 3 rows -- header main footer*/
   position: relative;
-  display: grid;
-  /* 3 rows -- header main footer signature*/
-  grid-template-rows: auto 1fr auto;
   color: #ffffff;
 }
 
@@ -88,25 +86,24 @@ h4 {
 }
 
 p {
-  text-align: justify;
   line-height: 2.5ch;
   max-width: 50ch;
 }
 
 a {
+  font-family: "Source Code Pro", sans-serif;
   text-decoration: none;
   color: #ffffff;
-  font-family: "Source Code Pro", sans-serif;
 }
 
 .c-t-a {
   display: block;
-  color: #00ffff;
-  border: 1px solid;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   max-width: 200px;
-  padding: 20px 0;
   margin: 0 auto;
+  padding: 20px 0;
+  border: 1px solid;
+  color: #00ffff;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 ul li {
@@ -127,11 +124,6 @@ ul li {
 
 .container-lg {
   padding: 100px 200px;
-}
-
-.border {
-  border: 1px solid #303030;
-  margin-top: 20px;
 }
 
 .center-text {
@@ -162,17 +154,26 @@ header nav a {
   grid-auto-flow: column;
   color: #000000;
 }
-header ul {
+header nav button {
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+  z-index: 9;
+}
+header nav button i {
+  font-size: 25px;
+}
+header nav ul {
   display: none;
   position: absolute;
   background-color: #242424;
   width: min-content;
 }
-header ul li {
-  display: inline;
+header nav ul li {
+  display: block;
   align-items: center;
 }
-header ul li a {
+header nav ul li a {
   display: grid;
   align-items: center;
   justify-content: space-between;
@@ -180,22 +181,16 @@ header ul li a {
   padding: 1.5rem 1rem;
   border-bottom: 1px solid #000000;
 }
-header ul li a i {
+header nav ul li a i {
   font-size: 2rem;
   padding: 0 15px;
 }
-header button {
-  background-color: unset;
-  border: none;
-  cursor: pointer;
-  z-index: 9;
-}
-header button i {
-  font-size: 25px;
+header nav ul li:last-child {
+  border-bottom: none;
 }
 
 .toggle-nav {
-  display: grid;
+  display: block;
 }
 
 @keyframes scanner {
@@ -250,13 +245,6 @@ main section h2 span {
   animation-delay: 2s;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
-}
-main section .triangle {
-  width: 0;
-  height: 0;
-  border-right: 12.5px solid transparent;
-  border-left: 12.5px solid transparent;
-  border-bottom: 21.650635px solid #00ffff;
 }
 
 main section:nth-child(1) {
@@ -317,6 +305,14 @@ main section:nth-child(even) div.container-md {
   color: #00ffff;
 }
 
+.triangle {
+  width: 0;
+  height: 0;
+  border-right: 12.5px solid transparent;
+  border-left: 12.5px solid transparent;
+  border-bottom: 21.650635px solid #00ffff;
+}
+
 footer {
   text-align: center;
   background-color: #242424;
@@ -343,6 +339,9 @@ footer ul li a span {
 footer ul li a span i {
   position: absolute;
   right: 0;
+}
+footer address {
+  text-align: start;
 }
 
 .link-icon {
