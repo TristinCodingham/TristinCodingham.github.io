@@ -39,7 +39,7 @@ main section:nth-child(1) {
     background: url('../../assets/images/alexey-ruban-73o_FzZ5x-w-unsplash.jpg');
     background-position: center;
     background-size: cover;
-    background-blend-mode: color-burn;
+    background-blend-mode: overlay;
 
     div.container-md {
         border: none !important;
@@ -104,4 +104,8 @@ main section:nth-child(even) {
     border-right: 12.5px solid  transparent; 
     border-left: 12.5px solid  transparent; 
     border-bottom: 21.650635px solid $accent-color;
+}
+
+.seo-score {
+    float: right;
 }
