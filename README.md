@@ -1,3 +1,3 @@
 # Official Website
-## https://TristinCodingham/TristinCodingham.github.io
+## https://TristinCodingham.github.io
 ## Author: Tristin Cunningham
