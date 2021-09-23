@@ -37,7 +37,7 @@ header {
         ul {
             display: none;
             position: absolute;
-            background-color: darken($background-color, 10);
+            background-color: $background-color;
             width: min-content;
     
             li {

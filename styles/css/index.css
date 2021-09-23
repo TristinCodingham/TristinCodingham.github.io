@@ -72,7 +72,7 @@ h3 {
   font-size: 1.5rem;
   font-weight: lighter;
   letter-spacing: 1px;
-  color: #80CED7;
+  max-width: 17ch;
   margin-bottom: 20px;
   font-variant: small-caps;
 }
@@ -178,7 +178,7 @@ header nav button i {
 header nav ul {
   display: none;
   position: absolute;
-  background-color: #242424;
+  background-color: #333;
   width: min-content;
 }
 header nav ul li {
@@ -234,7 +234,7 @@ header nav ul li:last-child {
 main section {
   position: relative;
   overflow-x: hidden;
-  background-color: #3d3d3d;
+  background-color: #333;
 }
 main section h2 {
   clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
@@ -264,7 +264,7 @@ main section:nth-child(1) {
   background: url("../../assets/images/alexey-ruban-73o_FzZ5x-w-unsplash.jpg");
   background-position: center;
   background-size: cover;
-  background-blend-mode: overlay;
+  background-blend-mode: color-burn;
 }
 main section:nth-child(1) div.container-md {
   border: none !important;
@@ -282,11 +282,11 @@ main section:nth-child(odd) div.container-md {
 
 main section:nth-child(even) {
   position: relative;
-  background-color: #3d3d3d;
+  background-color: #007EA7;
   z-index: 1;
 }
 main section:nth-child(even) div.container-md {
-  border: 1px solid #353535;
+  border: 1px solid #007298;
 }
 
 .quick-start {
@@ -331,10 +331,10 @@ main section:nth-child(even) div.container-md {
 
 footer {
   text-align: center;
-  background-color: #242424;
+  background-color: #1a1a1a;
 }
 footer div {
-  background-color: #3d3d3d;
+  background-color: #333;
 }
 footer ul {
   display: grid;
