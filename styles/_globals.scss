@@ -30,24 +30,23 @@ section {
 
 h1 {
     font-family: 'Pattaya', sans-serif;
-    color: $accent-color;
     letter-spacing: 3px;
+    font-size: 42px;
+    max-width: 15ch;
 }
 
 h2 {
     font-family: 'Libre Barcode 39 Text', sans-serif;
     font-weight: lighter;
-    font-size: 3rem;
-    width: min-content;
+    font-size: 32px;
     color: $text-color-light;
 }
 
 h3 {
     font-family: 'Ethnocentric', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: lighter;
     letter-spacing: 1px;
-    max-width: 17ch;
     margin-bottom: 20px;
     font-variant: small-caps;
 }
@@ -105,7 +104,7 @@ ul li {
 }
 
 .container-md {
-    padding: 100px 1rem;
+    padding: 80px 1rem 40px 1rem;
 }
 
 .container-lg {
@@ -118,4 +117,21 @@ ul li {
 
 .fa-external-link-alt {
     font-size: 10px;
+}
+
+.mask-ltr {
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+    animation-name: mask-ltr;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.scanner {
+    animation-name: scanner;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
 }

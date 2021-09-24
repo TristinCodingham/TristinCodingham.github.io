@@ -55,24 +55,23 @@ section {
 
 h1 {
   font-family: "Pattaya", sans-serif;
-  color: #80CED7;
   letter-spacing: 3px;
+  font-size: 42px;
+  max-width: 15ch;
 }
 
 h2 {
   font-family: "Libre Barcode 39 Text", sans-serif;
   font-weight: lighter;
-  font-size: 3rem;
-  width: min-content;
+  font-size: 32px;
   color: #ffffff;
 }
 
 h3 {
   font-family: "Ethnocentric", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: lighter;
   letter-spacing: 1px;
-  max-width: 17ch;
   margin-bottom: 20px;
   font-variant: small-caps;
 }
@@ -130,7 +129,7 @@ ul li {
 }
 
 .container-md {
-  padding: 100px 1rem;
+  padding: 80px 1rem 40px 1rem;
 }
 
 .container-lg {
@@ -143,6 +142,23 @@ ul li {
 
 .fa-external-link-alt {
   font-size: 10px;
+}
+
+.mask-ltr {
+  clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+  animation-name: mask-ltr;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.scanner {
+  animation-name: scanner;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
 }
 
 header {
@@ -236,14 +252,6 @@ main section {
   overflow-x: hidden;
   background-color: #333;
 }
-main section h2 {
-  clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
-  animation-name: mask-ltr;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
 main section h2 span {
   display: block;
   position: relative;
@@ -252,19 +260,17 @@ main section h2 span {
   height: 3px;
   z-index: 2;
   background-color: #ad0000;
-  animation-name: scanner;
-  animation-duration: 2s;
-  animation-delay: 2s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
 }
 
 main section:nth-child(1) {
   /* HERO SECTION */
-  background: url("../../assets/images/alexey-ruban-73o_FzZ5x-w-unsplash.jpg");
+  background: url("../../assets/images/line-graphic.png");
   background-position: center;
-  background-size: cover;
-  background-blend-mode: color-burn;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+main section:nth-child(1) p {
+  font-size: 22px;
 }
 main section:nth-child(1) div.container-md {
   border: none !important;
@@ -297,6 +303,13 @@ main section:nth-child(even) div.container-md {
 }
 .quick-start li a {
   display: block;
+}
+
+.learn-more {
+  background: url("../../assets/images/learn-more-graphic.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
 }
 
 .back-to-top {

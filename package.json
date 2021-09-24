@@ -1,7 +1,7 @@
 {
   "name": "codingham-co-za",
   "version": "1.0.0",
-  "description": "",
+  "description": "Frontend Web Developer Profile",
   "main": "scripts.js",
   "scripts": {
     "sass-parser": "rm styles/css/index.css && sass styles/css/index.scss styles/css/index.css",
