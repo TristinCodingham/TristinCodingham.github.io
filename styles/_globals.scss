@@ -38,7 +38,9 @@ h1 {
 h2 {
     font-family: 'Libre Barcode 39 Text', sans-serif;
     font-weight: lighter;
-    font-size: 36px;
+    font-size: 2rem;
+    width: min-content;
+    margin: 0 auto;
     color: $text-color-light;
 }
 
@@ -71,21 +73,16 @@ a {
 }
 
 .c-t-a {
+    font-family: 'Source Code Pro', sans-serif;
     display: block;
     max-width: 200px;
     margin: 1rem auto;
     padding: 20px 0;
-    font-family: 'Source Code Pro', sans-serif;
-    color: $text-color-light;
     background: hsla(195, 100%, 33%, 1);
-
-background: linear-gradient(0deg, hsla(195, 100%, 33%, 1) 0%, hsla(199, 100%, 14%, 1) 100%);
-
-background: -moz-linear-gradient(0deg, hsla(195, 100%, 33%, 1) 0%, hsla(199, 100%, 14%, 1) 100%);
-
-background: -webkit-linear-gradient(0deg, hsla(195, 100%, 33%, 1) 0%, hsla(199, 100%, 14%, 1) 100%);
-
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#007EA7", endColorstr="#003249", GradientType=1 );
+    background: linear-gradient(45deg, hsla(195, 100%, 33%, 1) 0%, hsla(199, 100%, 14%, 1) 100%);
+    background: -moz-linear-gradient(45deg, hsla(195, 100%, 33%, 1) 0%, hsla(199, 100%, 14%, 1) 100%);
+    background: -webkit-linear-gradient(45deg, hsla(195, 100%, 33%, 1) 0%, hsla(199, 100%, 14%, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#007EA7", endColorstr="#003249", GradientType=1 );
 }
 
 .c-t-a-ghost {
