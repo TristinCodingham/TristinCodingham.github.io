@@ -34,8 +34,8 @@ main section:nth-child(1) {
 }
 
 main section:nth-child(odd) {
-    position: sticky;
-    top: 0px;
+    // position: sticky;
+    // top: 0px;
     color: $text-color-light !important;
     background-color: $accent-color-prussian-blue;
 
@@ -64,13 +64,6 @@ main section:nth-child(even) {
             display: block;
         }
     }
-}
-
-.learn-more {
-    background: url('../../assets/images/learn-more-graphic.png');
-    background-position: center;
-    background-size: cover;
-    text-align: center;
 }
 
 .back-to-top {

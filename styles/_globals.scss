@@ -25,7 +25,7 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    min-height: calc(100vh - 50px);
 }
 
 h1 {
@@ -38,7 +38,7 @@ h1 {
 h2 {
     font-family: 'Libre Barcode 39 Text', sans-serif;
     font-weight: lighter;
-    font-size: 32px;
+    font-size: 36px;
     color: $text-color-light;
 }
 
@@ -77,13 +77,20 @@ a {
     padding: 20px 0;
     font-family: 'Source Code Pro', sans-serif;
     color: $text-color-light;
-    background-color: $accent-color-cg-blue;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    background: hsla(195, 100%, 33%, 1);
+
+background: linear-gradient(0deg, hsla(195, 100%, 33%, 1) 0%, hsla(199, 100%, 14%, 1) 100%);
+
+background: -moz-linear-gradient(0deg, hsla(195, 100%, 33%, 1) 0%, hsla(199, 100%, 14%, 1) 100%);
+
+background: -webkit-linear-gradient(0deg, hsla(195, 100%, 33%, 1) 0%, hsla(199, 100%, 14%, 1) 100%);
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#007EA7", endColorstr="#003249", GradientType=1 );
 }
 
 .c-t-a-ghost {
     color: $accent-color;
-    background-color: unset;
+    background: none;
     border: 1px solid;
 }
 
@@ -115,6 +122,14 @@ ul li {
     text-align: center;
 }
 
+.vertical-align-text {
+    vertical-align: middle;
+}
+
+.grid {
+    display: grid;
+}
+
 .fa-external-link-alt {
     font-size: 10px;
 }
@@ -122,9 +137,9 @@ ul li {
 .mask-ltr {
     clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
     animation-name: mask-ltr;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-delay: 1s;
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
