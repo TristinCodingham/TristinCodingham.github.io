@@ -31,7 +31,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Calibri", sans-serif;
 }
 
 *::after, *::before {
@@ -45,6 +44,7 @@
 
 body {
   /* 3 rows -- header main footer*/
+  font-family: "Calibri", sans-serif;
   position: relative;
   color: #ffffff;
 }
@@ -56,7 +56,7 @@ section {
 h1 {
   font-family: "Pattaya", sans-serif;
   letter-spacing: 3px;
-  font-size: 42px;
+  font-size: 2.5rem;
   max-width: 15ch;
 }
 
@@ -71,7 +71,7 @@ h2 {
 
 h3 {
   font-family: "Ethnocentric", sans-serif;
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: lighter;
   letter-spacing: 1px;
   margin-bottom: 20px;
@@ -308,6 +308,9 @@ main section:nth-child(even) div.container-md {
 
 .quick-start {
   text-align: center;
+}
+.quick-start p {
+  margin: 0 auto;
 }
 .quick-start li {
   padding: 5px;

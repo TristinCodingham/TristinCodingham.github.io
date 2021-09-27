@@ -57,6 +57,10 @@ main section:nth-child(even) {
 .quick-start {
     text-align: center;
 
+    p{
+        margin: 0 auto;
+    }
+
     li {
         padding: 5px;
         
