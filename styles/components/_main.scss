@@ -5,7 +5,6 @@
 main section {
     position: relative;
     overflow-x: hidden;
-    background-color: $background-color;
 
     h2 span {
         display: block;
@@ -46,7 +45,7 @@ main section:nth-child(odd) {
 
 main section:nth-child(even) {
     position: relative;
-    background-color: $accent-color-cg-blue;
+    color: $accent-color-prussian-blue;
     z-index: 1;
 
     div.container-md {

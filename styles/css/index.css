@@ -50,6 +50,7 @@ body {
 }
 
 section {
+  position: relative;
   min-height: calc(100vh - 50px);
 }
 
@@ -66,7 +67,6 @@ h2 {
   font-size: 2rem;
   width: min-content;
   margin: 0 auto;
-  color: #ffffff;
 }
 
 h3 {
@@ -76,6 +76,7 @@ h3 {
   letter-spacing: 1px;
   margin-bottom: 20px;
   font-variant: small-caps;
+  color: #007EA7;
 }
 
 h6 {
@@ -268,7 +269,6 @@ header nav ul li:last-child {
 main section {
   position: relative;
   overflow-x: hidden;
-  background-color: #333;
 }
 main section h2 span {
   display: block;
@@ -304,7 +304,7 @@ main section:nth-child(odd) div.container-md {
 
 main section:nth-child(even) {
   position: relative;
-  background-color: #007EA7;
+  color: #003249;
   z-index: 1;
 }
 main section:nth-child(even) div.container-md {

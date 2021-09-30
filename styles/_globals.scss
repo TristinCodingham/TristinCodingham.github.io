@@ -25,6 +25,7 @@ body {
 }
 
 section {
+    position: relative;
     min-height: calc(100vh - 50px);
 }
 
@@ -41,7 +42,6 @@ h2 {
     font-size: 2rem;
     width: min-content;
     margin: 0 auto;
-    color: $text-color-light;
 }
 
 h3 {
@@ -51,6 +51,7 @@ h3 {
     letter-spacing: 1px;
     margin-bottom: 20px;
     font-variant: small-caps;
+    color: $accent-color-cg-blue;
 }
 
 h6 {
