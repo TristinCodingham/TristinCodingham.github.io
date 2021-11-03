@@ -2,10 +2,10 @@
 
 footer {
     text-align: center;
-    background-color: darken($background-color, 10);
+    background-color: darken($background-color-dark, 10);
 
     div {
-        background-color: $background-color;
+        background-color: $background-color-dark;
     }
 
     ul {

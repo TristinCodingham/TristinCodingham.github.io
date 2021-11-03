@@ -3,31 +3,32 @@
 
 header {
     position: sticky;
-    align-items: center;
     z-index: 9;
     top: 0px;
     height: 50px;
-    padding: 0.4rem 1rem;
-    background-color: $header-background-color;
+    background-color: $background-color-light;
 
     nav {
         position: relative;
         display: grid;
         grid-template-columns: 1fr min-content;
         width: 100%;
+        box-shadow: 1px 0px 5px $background-color-dark;
 
-        a {
-            display: grid;
+        div {
+            height: 50px;
+            padding: 0.4rem 1rem;
+            display: flex;
             align-items: center;
-            grid-auto-flow: column;
-            grid-template-columns: auto 1fr;
-            color: $text-color-dark;
+            z-index: 2;
+            background-color: $background-color-light;
         }
 
         button {
             background-color: unset;
             border: none;
             cursor: pointer;
+            padding: 0.4rem 1rem;
             z-index: 9;
     
             i {
@@ -36,27 +37,24 @@ header {
         }
 
         ul {
-            display: none;
             position: absolute;
-            background-color: $background-color;
-            width: min-content;
+            background-color: $background-color-light;
+            width: max-content;
     
             li {
-                display: block;
+                display: flex;
                 align-items: center;
-    
+                justify-content: space-between;
+                gap: 10px;
+                padding: 1.5rem 2rem;
+                border-bottom: 1px solid $text-color-dark;
+
+                i {
+                    font-size: 2rem;
+                }   
+
                 a {
-                    display: grid;
-                    align-items: center;
-                    justify-content: space-between;
-                    color: $text-color-light;
-                    padding: 1.5rem 1rem;
-                    border-bottom: 1px solid $text-color-dark;
-    
-                    i {
-                        font-size: 2rem;
-                        padding: 0 15px;
-                    }
+                    color: $text-color-dark;
                 }
             }
             li:last-child {
@@ -64,8 +62,4 @@ header {
             }
         }
     } 
-}
-
-.toggle-nav {
-    display: block;
 }

@@ -21,12 +21,12 @@ body {
     /* 3 rows -- header main footer*/
     font-family: "Calibri", sans-serif;
     position: relative;
-    color: $text-color-light;
+    color: #333;
 }
 
 section {
     position: relative;
-    min-height: calc(100vh - 50px);
+    min-height: 400px;
 }
 
 h1 {
@@ -71,6 +71,11 @@ a {
     font-family: 'Source Code Pro', sans-serif;
     text-decoration: none;
     color: $text-color-light;
+}
+
+small {
+    color: $text-color-light;
+    opacity: 0.9;
 }
 
 .c-t-a {
@@ -144,6 +149,11 @@ ul li {
     animation-delay: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
+}
+
+.mask-ttb-idle {
+    transform: translateY(-150%);
+    z-index: -1;
 }
 
 .scanner {

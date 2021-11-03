@@ -39,19 +39,19 @@
 
 :focus {
   outline: none;
-  box-shadow: 0px -1px 1px #80CED7 inset;
+  box-shadow: 0px -1px 1px #00ceff inset;
 }
 
 body {
   /* 3 rows -- header main footer*/
   font-family: "Calibri", sans-serif;
   position: relative;
-  color: #ffffff;
+  color: #333;
 }
 
 section {
   position: relative;
-  min-height: calc(100vh - 50px);
+  min-height: 400px;
 }
 
 h1 {
@@ -83,7 +83,7 @@ h6 {
   font-family: "Arty", sans-serif;
   font-size: 2rem;
   letter-spacing: 3px;
-  color: #80CED7;
+  color: #00ceff;
   text-align: center;
 }
 
@@ -96,6 +96,11 @@ a {
   font-family: "Source Code Pro", sans-serif;
   text-decoration: none;
   color: #ffffff;
+}
+
+small {
+  color: #ffffff;
+  opacity: 0.9;
 }
 
 .c-t-a {
@@ -112,7 +117,7 @@ a {
 }
 
 .c-t-a-ghost {
-  color: #80CED7;
+  color: #00ceff;
   background: none;
   border: 1px solid;
 }
@@ -171,6 +176,11 @@ ul li {
   animation-fill-mode: forwards;
 }
 
+.mask-ttb-idle {
+  transform: translateY(-150%);
+  z-index: -1;
+}
+
 .scanner {
   animation-name: scanner;
   animation-duration: 2s;
@@ -181,63 +191,57 @@ ul li {
 
 header {
   position: sticky;
-  align-items: center;
   z-index: 9;
   top: 0px;
   height: 50px;
-  padding: 0.4rem 1rem;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 header nav {
   position: relative;
   display: grid;
   grid-template-columns: 1fr min-content;
   width: 100%;
+  box-shadow: 1px 0px 5px #333;
 }
-header nav a {
-  display: grid;
+header nav div {
+  height: 50px;
+  padding: 0.4rem 1rem;
+  display: flex;
   align-items: center;
-  grid-auto-flow: column;
-  grid-template-columns: auto 1fr;
-  color: #000000;
+  z-index: 2;
+  background-color: #fff;
 }
 header nav button {
   background-color: unset;
   border: none;
   cursor: pointer;
+  padding: 0.4rem 1rem;
   z-index: 9;
 }
 header nav button i {
   font-size: 25px;
 }
 header nav ul {
-  display: none;
   position: absolute;
-  background-color: #333;
-  width: min-content;
+  background-color: #fff;
+  width: max-content;
 }
 header nav ul li {
-  display: block;
-  align-items: center;
-}
-header nav ul li a {
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  color: #ffffff;
-  padding: 1.5rem 1rem;
+  gap: 10px;
+  padding: 1.5rem 2rem;
   border-bottom: 1px solid #000000;
 }
-header nav ul li a i {
+header nav ul li i {
   font-size: 2rem;
-  padding: 0 15px;
+}
+header nav ul li a {
+  color: #000000;
 }
 header nav ul li:last-child {
   border-bottom: none;
-}
-
-.toggle-nav {
-  display: block;
 }
 
 @keyframes scanner {
@@ -286,6 +290,9 @@ main section:nth-child(1) {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  color: #ffffff;
+  background-color: #003249;
+  min-height: calc(100vh - 50px);
 }
 main section:nth-child(1) p {
   font-size: 22px;
@@ -294,17 +301,12 @@ main section:nth-child(1) div.container-md {
   border: none !important;
 }
 
-main section:nth-child(odd) {
-  color: #ffffff !important;
-  background-color: #003249;
-}
 main section:nth-child(odd) div.container-md {
   border: 1px solid #003c58;
 }
 
 main section:nth-child(even) {
   position: relative;
-  color: #003249;
   z-index: 1;
 }
 main section:nth-child(even) div.container-md {
@@ -339,7 +341,7 @@ main section:nth-child(even) div.container-md {
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 .back-to-top i {
-  color: #80CED7;
+  color: #00ceff;
 }
 
 .triangle {
@@ -347,7 +349,7 @@ main section:nth-child(even) div.container-md {
   height: 0;
   border-right: 12.5px solid transparent;
   border-left: 12.5px solid transparent;
-  border-bottom: 21.650635px solid #80CED7;
+  border-bottom: 21.650635px solid #00ceff;
 }
 
 .seo-score {
