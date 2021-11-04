@@ -20,9 +20,10 @@ main section {
 main section:nth-child(1) {
     /* HERO SECTION */
     background: url('../../assets/images/line-graphic.png');
-    background-position: center;
+    background-position: bottom left;
     background-size: contain;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color: $text-color-light;
     background-color: $accent-color-prussian-blue;
     min-height: calc(100vh - 50px);
