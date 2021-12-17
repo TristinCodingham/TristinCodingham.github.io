@@ -6,6 +6,10 @@ footer {
 
     div {
         background-color: $background-color-dark;
+        
+        span {
+            color: $text-color-light;
+        }
     }
 
     ul {
