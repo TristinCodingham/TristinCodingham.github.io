@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/tristincodingham/static/css/main.e6fabf1c.chunk.css",
+    "main.js": "/tristincodingham/static/js/main.405d3872.chunk.js",
+    "main.js.map": "/tristincodingham/static/js/main.405d3872.chunk.js.map",
+    "runtime-main.js": "/tristincodingham/static/js/runtime-main.01ef245f.js",
+    "runtime-main.js.map": "/tristincodingham/static/js/runtime-main.01ef245f.js.map",
+    "static/js/2.2f375439.chunk.js": "/tristincodingham/static/js/2.2f375439.chunk.js",
+    "static/js/2.2f375439.chunk.js.map": "/tristincodingham/static/js/2.2f375439.chunk.js.map",
+    "static/js/3.f1be4bb0.chunk.js": "/tristincodingham/static/js/3.f1be4bb0.chunk.js",
+    "static/js/3.f1be4bb0.chunk.js.map": "/tristincodingham/static/js/3.f1be4bb0.chunk.js.map",
+    "index.html": "/tristincodingham/index.html",
+    "static/css/main.e6fabf1c.chunk.css.map": "/tristincodingham/static/css/main.e6fabf1c.chunk.css.map",
+    "static/js/2.2f375439.chunk.js.LICENSE.txt": "/tristincodingham/static/js/2.2f375439.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/tristincodingham/static/media/ethnocentric rg.8d076088.ttf",
+    "static/media/Tristin-Cunningham-Résumé.780938a0.pdf": "/tristincodingham/static/media/Tristin-Cunningham-Résumé.780938a0.pdf",
+    "static/media/profilepic-crop.6bbeaad7.jpg": "/tristincodingham/static/media/profilepic-crop.6bbeaad7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01ef245f.js",
+    "static/js/2.2f375439.chunk.js",
+    "static/css/main.e6fabf1c.chunk.css",
+    "static/js/main.405d3872.chunk.js"
+  ]
+}
