@@ -2,6 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tristincodingham.github.io/tristincodingham",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TristinCodingham/TristinCodingham.github.io.git"
@@ -23,7 +24,6 @@
   "bugs": {
     "url": "https://github.com/TristinCodingham/TristinCodingham.github.io/issues"
   },
-  "homepage": "https://TristinCodingham.github.io/build",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
