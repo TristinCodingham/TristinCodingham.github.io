@@ -5,21 +5,13 @@ import Container from '../components/styled/Container';
 
 import useSpacing from '../utils/useSpacing';
 import LearnMore from '../components/layout/LearnMore';
+import BackgroundImage from '../components/styled/BackgroundImage';
+
+import image from '../assets/images/efe-kurnaz-RnCPiXixooY-unsplash.jpg';
+import Minimalism from '../components/layout/Minimalism';
 
 export default function HomePage() {
-    const [offset, setOffset] = useState(window.pageYOffset);
     const { padding } = useSpacing();
-    
-    const handleScroll = () => {
-        setOffset(window.pageYOffset);
-    }
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        }
-    }, [offset]);
 
     return (
         <main id="page-top">
@@ -28,6 +20,12 @@ export default function HomePage() {
             <Container padding={padding}>
                 <LearnMore />
             </Container>
+
+            <BackgroundImage image={image}>
+                <Container padding={padding}>
+                    <Minimalism />
+                </Container>
+            </BackgroundImage>
 
             <section className="container-md">
                 <h2>Minimalism<span className="scanner" aria-hidden="true"></span><div></div></h2>

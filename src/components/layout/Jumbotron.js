@@ -1,13 +1,14 @@
 import React from 'react';
 
-import { NavLink } from 'react-router-dom';
-
 import useWindowSize from '../../utils/useWindowSize';
 
 import Socials from '../widgets/Socials';
 import ProfilePic from '../layout/ProfilePic';
 import StyledJumbotron from '../styled/Jumbotron';
 import useSpacing from '../../utils/useSpacing';
+
+import LinkStyled from '../styled/Link';
+import NavLinkStyled from '../styled/NavLink';
 
 export default function Jumbotron() {
     const { width } = useWindowSize();
@@ -30,8 +31,8 @@ export default function Jumbotron() {
                     websites with meaningful semantics 
                     and memorable experiences.
                 </p>
-                <NavLink to="/contact" className="c-t-a center-text" title="Lets chat &#9749">Hire</NavLink>
-                <a href="#learn-more" className="c-t-a c-t-a-ghost center-text">Learn more</a>
+                <NavLinkStyled to="/contact" title="Lets chat &#9749">Hire</NavLinkStyled>
+                <LinkStyled ghost href="#learn-more">Learn more</LinkStyled>
             </div>
         </StyledJumbotron>
     )
