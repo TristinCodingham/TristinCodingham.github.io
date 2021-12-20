@@ -17,9 +17,7 @@ transition: 200ms ease-out;
 
     & blockquote {
         max-width: 65ch;
-        border: thin solid var(--accent-color-dark);
-        padding: 10px 40px;
-        margin-bottom: 80px;
+        margin: 30px;
     }
     
     & h4 {
