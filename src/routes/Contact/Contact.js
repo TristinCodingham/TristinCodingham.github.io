@@ -5,6 +5,7 @@ import ContactStyle from './Contact.style';
 export default function Contact() {
     return (
         <ContactStyle>
+            <h1>Contact</h1>
             <form action="https://formspree.io/f/xlezeybe" method="POST">
                 <Container>
                     <input type="email" name="_replyto" placeholder="Full name" />
