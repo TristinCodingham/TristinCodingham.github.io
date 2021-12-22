@@ -5,7 +5,7 @@ export default function About() {
     return (
         <AboutStyle>
             <div className="about-me">
-            
+                
             </div>
             <div className="toolbox">
 

@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import jumbotronImage from '../../assets/images/alexey-ruban-73o_FzZ5x-w-unsplash.jpg';
 
 export default styled.section`
 display: flex;
@@ -6,11 +7,13 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 min-height: calc(100vh - 49px);
+background: url(${jumbotronImage});
+background-size: cover;
+width: 100%;
 
 .jumbotron {
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 1px 1px 10px #dddddd;
     transform: ${({ isLoaded }) => !isLoaded && "translateX(-1000px)"};
     transition: 200ms ease-out;
 

@@ -1,7 +1,8 @@
 export const theme = {
     accents: {
         skyBlue: '#00ceff',
-        skyBlueShade: '#31BFE2'
+        skyBlueShade: '#31BFE2',
+        prussianBlue: '#003249',
     },
 
     fg: {
