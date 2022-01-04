@@ -53,6 +53,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #ededed;
 }
+
+a {
+  text-decoration: none;
+}
   
 code {
   font-family: 'Source Code Pro', sans-serif;

@@ -9,7 +9,7 @@ export default function useSpacing() {
     useEffect(() => {
         if(width <= 768) setPadding("15px");
         if(width > 768) setPadding("30px");
-        if(width > 1024) setPadding("120px");
+        if(width > 1200) setPadding("120px");
     }, [width]);
 
     return { padding };

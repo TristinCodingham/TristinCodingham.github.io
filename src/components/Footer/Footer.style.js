@@ -2,13 +2,15 @@ import styled from 'styled-components';
 
 export default styled.footer`
     text-align: center;
-    background-color: var(--background-color-dark);
-    color: var(--text-color-light);
+    background-color: ${({theme}) => theme.bg.footer};
+    color: ${({theme}) => theme.fg.footer};
 
     ul {
         display: grid;
         grid-auto-flow: row;
         justify-content: center;
+        list-style: none;
+        padding: 60px 0;
 
         li a {
             display: grid;
@@ -16,6 +18,7 @@ export default styled.footer`
             text-align: center;
             margin: 1rem 0;
             list-style: none;
+            color: ${({theme}) => theme.fg.footer};
 
             span {
                 position: relative;
@@ -30,7 +33,8 @@ export default styled.footer`
 
     address {
         text-align: start;
-        background-color: var(--accent-color-prussian-blue);
+        background-color: #000;
+        padding: ${({padding}) => `30px ${padding}`};
         h4 {
             font-style: normal;
         }
@@ -42,6 +46,14 @@ export default styled.footer`
     }
 
     .powered-by {
-        color: var(--text-color-light);
+        color: ${({theme}) => theme.fg.footer};
+        padding: 15px 0;
+
+        h6 {
+            font-family: 'Arty Signature';
+            font-size: xx-large;
+            letter-spacing: 4px;
+            color: ${({theme}) => theme.accents.skyBlue};
+        }
     }
 `;

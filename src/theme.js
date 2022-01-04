@@ -6,15 +6,15 @@ export const theme = {
     },
 
     fg: {
-        header: '',
+        header: '#333',
         body: '',
-        footer: '',
+        footer: '#fff',
     },
 
     bg: {
         header: '#fff',
         body: '',
-        footer: '',
+        footer: '#333',
     },
 
     breakpoints: {
