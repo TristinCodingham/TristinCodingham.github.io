@@ -8,11 +8,13 @@ import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-ic
 import logo from '../../assets/images/tristinc.png';
 import NavbarState from './Navbar.state';
 import NavbarStyle from './Navbar.style';
+import useSpacing from '../../utils/hooks/useSpacing';
 
 export default function Navbar() {
     const { isNavOpen, handleNav, width } = NavbarState();
+    const { padding } = useSpacing();
     return (
-        <NavbarStyle isNavOpen={isNavOpen} width={width}>
+        <NavbarStyle isNavOpen={isNavOpen} width={width} padding={padding}>
             <nav>
                 <Link to="/"><img src={logo} alt="Logo" height="25px" /></Link>
                 <ul>

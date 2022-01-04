@@ -1,21 +1,26 @@
 import styled, { css } from 'styled-components';
-import jumbotronImage from '../../assets/images/alexey-ruban-73o_FzZ5x-w-unsplash.jpg';
+import backgroundImage from '../../assets/images/alexey-ruban-73o_FzZ5x-w-unsplash.jpg';
 
 export default styled.section`
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-min-height: calc(100vh - 49px);
-background: url(${jumbotronImage});
+min-height: calc(100vh - 39px);
+background: url(${backgroundImage});
 background-size: cover;
+background-attachment: fixed;
 width: 100%;
+padding: ${({padding}) => padding};
 
 .jumbotron {
     background-color: #fff;
     border-radius: 15px;
     transform: ${({ isLoaded }) => !isLoaded && "translateX(-1000px)"};
     transition: 200ms ease-out;
+    padding: ${({padding}) => `30px ${padding}`};
+    width: 100%;
+    text-align: center;
 
     .heading {
         display: flex;
@@ -95,6 +100,8 @@ width: 100%;
 /* Tablet size & ^ */
 ${({ width, theme }) => width > theme.breakpoints.mobile && css`
     .jumbotron {
+        text-align: start;
+
         .heading {
             flex-direction: row-reverse;
 

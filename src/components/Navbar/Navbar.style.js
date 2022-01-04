@@ -11,9 +11,9 @@ nav {
     display: grid;
     grid-template-columns: 1fr auto;
     background-color: ${({theme}) => theme.bg.header};
+    padding: ${({padding}) => `5px ${padding}`};
 
     img {
-        margin: 10px 15px;
         cursor: pointer;
     }
 
@@ -21,7 +21,7 @@ nav {
         position: absolute;
         align-items: center;
         width: 100%;
-        transform: ${({ isNavOpen }) => isNavOpen ? "translateY(49px)" : "translateY(-150%)"};
+        transform: ${({ isNavOpen }) => isNavOpen ? "translateY(39px)" : "translateY(-150%)"};
         transition: 200ms ease-out;
         text-align: center;
         background-color: ${({theme}) => theme.bg.header};
@@ -65,7 +65,6 @@ nav {
     }
 
     button {
-        margin: 10px 15px;
         border: none;
         background: none;
         font-size: larger;
@@ -82,9 +81,10 @@ nav {
         display: flex;
         position: relative;
         transform: translateY(0px);
-        justify-content: space-evenly;
+        justify-content: end;
         align-items: center;
         z-index: 1;
+        gap: 30px;
 
         li {
             display: inline;
