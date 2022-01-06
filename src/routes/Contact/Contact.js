@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithubSquare, faTwitterSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FaGithubSquare, FaTwitterSquare, FaLinkedin } from 'react-icons/fa';
 
 import ContactStyle from './Contact.style';
 import LinkStyled from '../../components/Link/Link.styled';
@@ -22,15 +21,23 @@ export default function Contact() {
                     <div className="details">
                         <a href="tel:0738188072">073 818 8072</a>
                         <a href="mailto:tristinc.codingham@gmail.com">tristinc.codingham@gmail.com</a>
+                        <address>
+                            <small>
+                                78 Mimosa Street<br />
+                                Kabeljous<br />
+                                Jeffreys Bay, 6330<br />
+                                Eastern Cape, South Africa
+                            </small>
+                        </address>
                         <div className="icons">
                             <a className="github" href="https://github.com/TristinCodingham" target="_blank" rel="noreferrer">
-                                <FontAwesomeIcon icon={faGithubSquare} />
+                                <FaGithubSquare />
                             </a>
                             <a className="twitter" href="https://twitter.com/Codingham" target="_blank" rel="noreferrer">
-                                <FontAwesomeIcon icon={faTwitterSquare} />
+                                <FaTwitterSquare />
                             </a>
                             <a className="linkedin" href="https://www.linkedin.com/in/tristincodingham/" target="_blank" rel="noreferrer">
-                                <FontAwesomeIcon icon={faLinkedin} />
+                                <FaLinkedin />
                             </a>
                         </div>
                     </div>

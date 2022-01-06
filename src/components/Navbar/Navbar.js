@@ -1,9 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FaBars, FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import logo from '../../assets/images/tristinc.png';
 import NavbarState from './Navbar.state';
@@ -11,36 +9,36 @@ import NavbarStyle from './Navbar.style';
 import useSpacing from '../../utils/hooks/useSpacing';
 
 export default function Navbar() {
-    const { isNavOpen, handleNav, width } = NavbarState();
+    const { isNavOpen, handleNav, closeNav, width } = NavbarState();
     const { padding } = useSpacing();
     return (
         <NavbarStyle isNavOpen={isNavOpen} width={width} padding={padding}>
             <nav>
-                <Link to="/"><img src={logo} alt="Logo" height="25px" /></Link>
+                <NavLink to="/" onClick={closeNav}><img src={logo} alt="Logo" height="25px" /></NavLink>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/contact">Contact</Link></li>
-                    <li><Link to="/about">About</Link></li>
+                    <li><NavLink to="/" onClick={closeNav} activeClassName=".active">Home</NavLink></li>
+                    <li><NavLink to="/contact" onClick={closeNav} activeClassName=".active">Contact</NavLink></li>
+                    <li><NavLink to="/about" onClick={closeNav} activeClassName=".active">About</NavLink></li>
                     <li>
                         <a href="https://github.com/TristinCodingham" target="_blank" rel="noreferrer">
                             Github
                         </a>
-                        <div className="github"><FontAwesomeIcon icon={faGithub} /></div>
+                        <i className="github"><FaGithub /></i>
                     </li>
                     <li>
                         <a href="https://twitter.com/Codingham" target="_blank" rel="noreferrer">
                             Twitter
                         </a>
-                        <div className="twitter"><FontAwesomeIcon icon={faTwitter} /></div>
+                        <i className="twitter"><FaTwitter /></i>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/tristincodingham/" target="_blank" rel="noreferrer">
                             Linkedin
                         </a>
-                        <div className="linkedin"><FontAwesomeIcon icon={faLinkedin} /></div>
+                        <i className="linkedin"><FaLinkedin /></i>
                     </li>
                 </ul>
-                <button onClick={handleNav}><FontAwesomeIcon icon={faBars} /></button>
+                <button onClick={handleNav}><FaBars /></button>
             </nav>
         </NavbarStyle>
     )

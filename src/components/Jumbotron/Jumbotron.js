@@ -1,6 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitterSquare, faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FaTwitterSquare, FaGithubSquare, FaLinkedin } from 'react-icons/fa';
 
 import JumbotronStyle from './Jumbotron.style';
 import profilepic from '../../assets/images/profilepic.jpg';
@@ -23,17 +22,17 @@ export default function Jumbotron() {
                         <ul>
                             <li className="github">
                                 <a href="https://github.com/TristinCodingham" target="_blank" rel="noreferrer">
-                                    <FontAwesomeIcon icon={faGithubSquare} />
+                                    <FaGithubSquare />
                                 </a>
                             </li>
                             <li className="twitter">
                                 <a href="https://twitter.com/Codingham" target="_blank" rel="noreferrer">
-                                    <FontAwesomeIcon icon={faTwitterSquare} />
+                                    <FaTwitterSquare />
                                 </a>
                             </li>
                             <li className="linkedin">
                                 <a href="https://www.linkedin.com/in/tristincodingham/" target="_blank" rel="noreferrer">
-                                    <FontAwesomeIcon icon={faLinkedin} />
+                                    <FaLinkedin />
                                 </a>
                             </li>
                         </ul>
