@@ -7,6 +7,7 @@ export default function NavbarState() {
     const { width } = useWindowSize();
 
     const handleNav = () => setIsNavOpen(!isNavOpen);
+    const closeNav = () => setIsNavOpen(false);
 
-    return { isNavOpen, handleNav, width };
+    return { isNavOpen, handleNav, closeNav, width };
 }

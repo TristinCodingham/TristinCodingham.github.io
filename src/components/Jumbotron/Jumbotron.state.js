@@ -5,6 +5,8 @@ export default function JumbotronState() {
     
     React.useEffect(() => {
         setIsLoaded(true);
+
+        return () => setIsLoaded(false);
     }, []);
 
     return { isLoaded };

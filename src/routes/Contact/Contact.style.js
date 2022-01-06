@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import formBackground from '../../assets/images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg';
+import formBackground from '../../assets/images/vania-shows-N1I6IgDOGJs-unsplash.jpg';
 
 export default styled.main`
 text-align: center;
@@ -13,9 +13,10 @@ text-align: center;
     color: #fff;
 
     h1 {
-        font-family: 'Pattaya', sans-serif;
-        letter-spacing: 3px;
+        font-family: 'Libre Barcode 39 Text', sans-serif;
         font-size: 2.5rem;
+        font-weight: lighter;
+        letter-spacing: 3px;
     }
 }
 

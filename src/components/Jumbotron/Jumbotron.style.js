@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import backgroundImage from '../../assets/images/alexey-ruban-73o_FzZ5x-w-unsplash.jpg';
+import backgroundImage from '../../assets/images/alexey-ruban-73o_FzZ5x-w-unsplash-medium.jpg';
 
 export default styled.section`
 display: flex;
@@ -20,6 +20,7 @@ padding: ${({padding}) => padding};
     transition: 200ms ease-out;
     padding: ${({padding}) => `30px ${padding}`};
     width: 100%;
+    max-width: 1200px;
     text-align: center;
 
     .heading {

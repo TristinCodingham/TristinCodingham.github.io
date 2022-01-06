@@ -4,7 +4,12 @@ export default styled.header`
 position: sticky;
 top: 0;
 box-shadow: 1px 1px 2px #eeeeee;
+background-color: ${({theme}) => theme.bg.header};
 z-index: 10;
+
+.active {
+    color: ${({theme}) => theme.accents.skyBlue};
+}
 
 nav {
     position: relative;
@@ -12,6 +17,8 @@ nav {
     grid-template-columns: 1fr auto;
     background-color: ${({theme}) => theme.bg.header};
     padding: ${({padding}) => `5px ${padding}`};
+    max-width: 1200px;
+    margin: 0 auto;
 
     img {
         cursor: pointer;
@@ -39,7 +46,7 @@ nav {
                 width: 100%;
             }
 
-            div {
+            i {
                 position: absolute;
                 display: flex;
                 align-items: center;
@@ -93,7 +100,7 @@ nav {
             a {
                 display: inline;
             }
-            div {
+            i {
                 display: none;
             }
         }
