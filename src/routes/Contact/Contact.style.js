@@ -35,7 +35,7 @@ text-align: center;
         background-color: #fff;
         margin: 0 auto;
         border-radius: 15px;
-        width: 100%;
+        max-width: 100%;
 
         h2 {
             margin-bottom: 40px;

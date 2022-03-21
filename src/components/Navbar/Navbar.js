@@ -17,7 +17,7 @@ export default function Navbar() {
                 <NavLink to="/" onClick={closeNav}><img src={logo} alt="Logo" height="25px" /></NavLink>
                 <ul>
                     <li><NavLink to="/" onClick={closeNav} activeClassName=".active">Home</NavLink></li>
-                    <li><NavLink to="/contact" onClick={closeNav} activeClassName=".active">Contact</NavLink></li>
+                    {/* <li><NavLink to="/contact" onClick={closeNav} activeClassName=".active">Contact</NavLink></li> */}
                     <li><NavLink to="/about" onClick={closeNav} activeClassName=".active">About</NavLink></li>
                     <li>
                         <a href="https://github.com/TristinCodingham" target="_blank" rel="noreferrer">

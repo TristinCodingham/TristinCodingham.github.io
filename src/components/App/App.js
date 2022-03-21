@@ -6,7 +6,6 @@ import Footer from '../Footer/Footer';
 
 import Home from '../../routes/Home/Home';
 import Error from '../../routes/Error/Error';
-import Contact from '../../routes/Contact/Contact';
 import About from '../../routes/About/About';
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        {/* <Route path="/contact" element={<Contact />} /> */}
         <Route path="/" exact element={<Home />} />
         <Route path="/*" element={<Error />} />
       </Routes>
